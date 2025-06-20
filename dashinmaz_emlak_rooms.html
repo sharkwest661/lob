@@ -1,0 +1,2458 @@
+<!DOCTYPE html>
+<html class="no-js" lang="az">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Bolbol</title>
+    <meta name="description" content="" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1.0, maximum-scale=3.0, initial-scale=1.0"
+    />
+    <meta name="theme-color" content="#013F44" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/libs/normalize.css/normalize.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/libs/bootstrap/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/libs/lightslider/lightslider.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/libs/sumogallery/sumogallery.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/libs/bootstrap-select/bootstrap-select.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="assets/libs/bootstrap-datetimepicker/tempusdominus-bootstrap-4.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/main/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <header class="header">
+      <div class="main_container">
+        <div class="header__topbar" id="standardTopBar">
+          <div class="contact">
+            <a href="" class="contact__network facebook"></a>
+            <a href="" class="contact__network instagram"></a>
+            <span class="contact__tel">
+              Dəstək:
+              <a href="tel:">012 555 65 00 | 055 262 65 00 </a>
+            </span>
+            <a href="" class="contact__network whatsapp"></a>
+            <a href="" class="contact__network telegram"></a>
+          </div>
+          <div class="d-md-flex align-items-center">
+            <img src="https://bolbol.az/static/web/img/logout-icon.svg" />
+            <a href="/auth/logout/">Çıxış</a>
+          </div>
+        </div>
+      </div>
+      <div class="navbar_bg">
+        <div class="main_container">
+          <nav class="navbar navbar-expand-md" id="standardNavbar">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarToggler"
+              aria-controls="navbarToggler"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            ></button>
+            <a class="navbar-brand" href="00-home-0.html">
+              <img src="assets/img/logo.svg" alt="logo" />
+            </a>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+              <div class="header__links">
+                <a href="" class="header__link header__link--favorites"
+                  >Seçdiklərim</a
+                >
+                <a
+                  href=""
+                  class="header__link header__link--login"
+                  data-toggle="modal"
+                  data-target="#loginModal"
+                  >Şəxsi kabinet</a
+                >
+                <!-- <a href="" class="header__link header__link--login">Şəxsi kabinet</a> -->
+                <!-- <a href="" class="header__link header__link--logout">Çıxış et</a> -->
+              </div>
+            </div>
+            <a href="" class="btn header__btn"><span>Yeni elan</span></a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- <div class="row">
+        <div class="col-lg-5 col-md-9 mx-auto">
+          <div class="search">
+            <form action="">
+              <div class="input-group search__group">
+                <input
+                  type="text"
+                  class="form-control search__input typed"
+                  id=""
+                />
+                <div class="input-group-append search__append">
+                  <button class="search__btn" type="button"></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div> -->
+      <div class="main_container">
+        <section class="d-md-block" id="neql_search">
+          <div class="main_container">
+            <div class="container-fluid forpadding0">
+              <div class="row" id="dekstop_search_bar_row">
+                <div class="mobx_search" id="dekstop_search_bar">
+                  <div class="search">
+                    <form action="">
+                      <div class="input-group search__group">
+                        <input
+                          type="text"
+                          class="form-control search__input typed"
+                          id=""
+                        />
+                        <div class="input-group-append search__append">
+                          <button class="search__btn" type="button"></button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <h1 class="emlak_title">Daşınmaz əmlak</h1>
+      </div>
+      <div class="main_container">
+        <div class="emlak_filter">
+          <div class="fixed_width" id="emlakBuy">
+            <div class="dropdown">
+              <button class="dropdown__button" data-value="emkak-buy">
+                Alış
+              </button>
+              <i class="fa-solid fa-angle-down drop_arrow"></i>
+              <ul class="dropdown__list">
+                <p class="items_reset_btn">
+                  Sıfırla<i class="fa-sharp fa-solid fa-xmark"></i>
+                </p>
+                <li class="dropdown__list-item">Alış</li>
+                <li class="dropdown__list-item">Kirayə</li>
+              </ul>
+              <input
+                type="text"
+                name="select-category"
+                value=""
+                class="dropdown__input-hidden"
+              />
+            </div>
+          </div>
+          <div class="fixed_width" id="emlakHouse">
+            <div class="dropdown">
+              <button class="dropdown__button" data-value="emkak-house">
+                Yeni tikili
+              </button>
+              <i class="fa-solid fa-angle-down drop_arrow"></i>
+              <ul class="dropdown__list dropdown_otaq">
+                <p class="items_reset_btn">
+                  Sıfırla<i class="fa-sharp fa-solid fa-xmark"></i>
+                </p>
+                <li class="dropdown__list-item">Yeni tikili</li>
+                <li class="dropdown__list-item">Mənzil</li>
+                <li class="dropdown__list-item">Köhnə tikili</li>
+                <li class="dropdown__list-item">Həyət / Bağ evi</li>
+                <li class="dropdown__list-item">Ofis</li>
+                <li class="dropdown__list-item">Qaraj</li>
+                <li class="dropdown__list-item">Torpaq</li>
+                <li class="dropdown__list-item">Obyekt</li>
+              </ul>
+              <input
+                type="text"
+                name="select-category"
+                value=""
+                class="dropdown__input-hidden"
+              />
+            </div>
+          </div>
+          <div class="fixed_width" id="emlakRoom" data-value="emlak_room">
+            <p id="checkedEmlakRoom" style="pointer-events: none !important">
+              Otaq sayı
+            </p>
+            <i
+              class="fa-solid fa-angle-down"
+              style="pointer-events: none !important"
+              id="emlakRoomArrow"
+            ></i>
+            <ul
+              class="emlak_room_dropdown emlakDesktopRoom"
+              id="emlakRoomDropdownDesktop"
+            >
+              <label for="otherRoom">
+                <input type="radio" id="otherRoom" checked="false" />
+                İstənilən otaq sayı
+              </label>
+              <label for="room1">
+                <input type="checkbox" id="room1" />
+                1 otaqlı
+              </label>
+              <label for="room2">
+                <input type="checkbox" id="room2" />
+                2 otaqlı
+              </label>
+              <label for="room3">
+                <input type="checkbox" id="room3" />
+                3 otaqlı
+              </label>
+              <label for="room4">
+                <input type="checkbox" id="room4" />
+                4 otaqlı
+              </label>
+              <label for="room5">
+                <input type="checkbox" id="room5" />
+                5 otaq və daha çox
+              </label>
+            </ul>
+          </div>
+          <div class="fixed_width grow-1 emlak_price">
+            <div class="unersal_inputs">
+              <label for="price_input_min">
+                <input type="text" id="price_input_min" />
+                <p>Qiymət, min</p>
+              </label>
+              <label for="price_input_max">
+                <input type="text" id="price_input_max" />
+                <p>maks</p>
+              </label>
+            </div>
+          </div>
+          <div class="fixed_width emlak_repair">
+            <label for="hamisi_input">
+              <input type="radio" id="hamisi_input" name="oooo" checked />
+              <p>Hamısı</p>
+            </label>
+            <label for="temirli_input">
+              <input type="radio" id="temirli_input" name="oooo" />
+              <p>Təmirli</p>
+            </label>
+            <label for="temirsiz_input">
+              <input type="radio" id="temirsiz_input" name="oooo" />
+              <p>Təmirsiz</p>
+            </label>
+          </div>
+          <div class="fixed_width emlak_place">
+            <div class="unersal_inputs">
+              <label for="price_input_min">
+                <input type="text" id="price_input_min" />
+                <p>Sahə(m<sup>2</sup>) , min</p>
+              </label>
+              <label for="price_input_max">
+                <input type="text" id="price_input_max" />
+                <p>maks</p>
+              </label>
+            </div>
+          </div>
+          <div class="fixed_width emlak_floor">
+            <div class="unersal_inputs">
+              <label for="price_input_min">
+                <input type="text" id="price_input_min" />
+                <p>Mərtəbə, min</p>
+              </label>
+              <label for="price_input_max">
+                <input type="text" id="price_input_max" />
+                <p>maks</p>
+              </label>
+            </div>
+          </div>
+          <div class="fixed_width grow-1" id="emlak_city">
+            <div class="dropdown">
+              <button class="dropdown__button" data-value="emlak_desc_city">
+                Şəhər
+              </button>
+              <i class="fa-solid fa-angle-down drop_arrow"></i>
+              <div class="dropdown__list_hero"></div>
+              <input
+                type="text"
+                name="select-category"
+                value=""
+                class="dropdown__input-hidden"
+              />
+            </div>
+          </div>
+          <div class="fixed_width" id="emlak_metro">
+            <div class="dropdown">
+              <button
+                class="dropdown__button empty"
+                data-value="emlak_desc_metro"
+                id="metro-btn"
+              >
+                Metro
+              </button>
+              <i class="fa-solid fa-angle-down drop_arrow"></i>
+              <div class="dropdown__list_hero" id="metros"></div>
+              <input
+                type="text"
+                name="select-category"
+                value=""
+                class="dropdown__input-hidden"
+              />
+            </div>
+          </div>
+          <div class="fixed_width" id="emlak_nisangah">
+            <div class="dropdown">
+              <button
+                class="dropdown__button empty"
+                data-value="emlak_desc_nisangah"
+                id="nisangah-btn"
+              >
+                Nişangah
+              </button>
+              <i class="fa-solid fa-angle-down drop_arrow"></i>
+              <div class="dropdown__list_hero" id="nisangahs"></div>
+              <input
+                type="text"
+                name="select-category"
+                value=""
+                class="dropdown__input-hidden"
+              />
+            </div>
+          </div>
+          <div class="fixed_width" id="emlak_rayon">
+            <div class="dropdown">
+              <button
+                class="dropdown__button empty"
+                data-value="emlak_desc_rayon"
+                id="rayon-btn"
+              >
+                Rayon
+              </button>
+              <i class="fa-solid fa-angle-down drop_arrow"></i>
+              <div class="dropdown__list_hero" id="rayons"></div>
+              <input
+                type="text"
+                name="select-category"
+                value=""
+                class="dropdown__input-hidden"
+              />
+            </div>
+          </div>
+          <div class="fixed_width grow-1" id="elmak_qesebe">
+            <div class="dropdown">
+              <button
+                class="dropdown__button empty"
+                data-value="emlak_desc_qesebe"
+                id="qesebe-btn"
+              >
+                Qəsəbə
+              </button>
+              <i class="fa-solid fa-angle-down drop_arrow"></i>
+              <div class="dropdown__list_hero" id="qesebeler"></div>
+              <input
+                type="text"
+                name="select-category"
+                value=""
+                class="dropdown__input-hidden"
+              />
+            </div>
+          </div>
+          <div class="additional_chekings_emlak"></div>
+          <div class="emlak_view_btns">
+            <button id="emlak_all_reset_btn">Sıfırla</button>
+            <button>Elanları göstər</button>
+          </div>
+        </div>
+      </div>
+      <div class="main_container">
+        <div class="emlak_mobi">
+          <div class="emlak_mobi_buy">
+            <label for="emlak_mobi_alqi_input">
+              <input
+                type="radio"
+                id="emlak_mobi_alqi_input"
+                name="pppp"
+                checked
+              />
+              <p id="emlak_mobi_alqi_p">Alqı-satqı</p>
+            </label>
+            <label for="emlak_mobi_kiraye_input">
+              <input type="radio" id="emlak_mobi_kiraye_input" name="pppp" />
+              <p id="emlak_mobi_kiraye_p">Kirayə</p>
+            </label>
+          </div>
+          <div class="form-group emlak_mobi_house">
+            <div class="dropdown">
+              <button class="dropdown__button" data-value="emkak-mobi-house">
+                Yeni tikililər
+              </button>
+              <i class="fa-solid fa-angle-down drop_arrow"></i>
+              <ul class="dropdown__list">
+                <p class="items_reset_btn">
+                  Sıfırla<i class="fa-sharp fa-solid fa-xmark"></i>
+                </p>
+                <li class="dropdown__list-item">Yeni tikililər</li>
+                <li class="dropdown__list-item">Köhnə tikililər</li>
+                <li class="dropdown__list-item">Daşınmaz əmlak</li>
+              </ul>
+              <input
+                type="text"
+                name="select-category"
+                value=""
+                class="dropdown__input-hidden"
+              />
+            </div>
+          </div>
+          <div
+            id="emlakRoom"
+            class="mobile_emlak_room"
+            data-value="emlak_mobi_room"
+          >
+            <p id="checkedEmlakRoom2" style="pointer-events: none !important">
+              Otaq sayı
+            </p>
+            <i
+              class="fa-solid fa-angle-down"
+              style="pointer-events: none !important"
+              id="emlakRoomArrow"
+            ></i>
+            <ul class="emlak_room_dropdown emlakRoomMobile">
+              <label for="otherRoom">
+                <input type="radio" id="otherRoom" checked="false" />
+                İstənilən otaq sayı
+              </label>
+              <label for="room1">
+                <input type="checkbox" id="room1" />
+                1 otaqlı
+              </label>
+              <label for="room2">
+                <input type="checkbox" id="room2" />
+                2 otaqlı
+              </label>
+              <label for="room3">
+                <input type="checkbox" id="room3" />
+                3 otaqlı
+              </label>
+              <label for="room4">
+                <input type="checkbox" id="room4" />
+                4 otaqlı
+              </label>
+              <label for="room5">
+                <input type="checkbox" id="room5" />
+                5 otaq və daha çox
+              </label>
+            </ul>
+          </div>
+          <button class="emlakMobiSearchBtn">
+            <i class="fa-solid fa-arrow-up-short-wide"></i>Ətraflı axtarış
+          </button>
+        </div>
+      </div>
+      <div class="emlakMobiSearchDropdown">
+        <div class="emlakMobiSearchDropdown_header_bg">
+          <div class="main_container">
+            <div class="emlakMobiSearchDropdown_header">
+              <i class="fa-solid fa-arrow-left"></i>
+              <p>Ətraflı axtarış</p>
+              <button class="emlakMobiSearchDropdown_reset">Sıfırla</button>
+            </div>
+          </div>
+        </div>
+        <div class="emlakMobiSearchDropdown_hero">
+          <div class="main_container">
+            <div class="emlak_mobi_buy" id="mean_buy">
+              <label for="emlak_mobi_alqi_input_mean">
+                <input
+                  type="radio"
+                  id="emlak_mobi_alqi_input_mean"
+                  name="pppp"
+                />
+                <p id="emlak_mobi_alqi_p">Alqı-satqı</p>
+              </label>
+              <label for="emlak_mobi_kiraye_input_mean">
+                <input
+                  type="radio"
+                  id="emlak_mobi_kiraye_input_mean"
+                  name="pppp"
+                  checked="false"
+                />
+                <p id="emlak_mobi_kiraye_p">Kirayə</p>
+              </label>
+            </div>
+            <div class="carousel-container">
+              <div class="emlak_checks emlak_checks_carusel">
+                <div class="carousel">
+                  <label for="checks_home">
+                    <input type="radio" id="checks_home" name="mmmmm" checked />
+                    <p>Mənzil</p>
+                    <p>Mənzil</p>
+                  </label>
+                  <label for="checks_Newhome">
+                    <input type="radio" id="checks_Newhome" name="mmmmm" />
+                    <p>Yeni tikili</p>
+                    <p>Yeni tikili</p>
+                  </label>
+                  <label for="checks_Oldhome">
+                    <input type="radio" id="checks_Oldhome" name="mmmmm" />
+                    <p>Köhnə tikili</p>
+                    <p>Köhnə tikili</p>
+                  </label>
+                  <label for="checks_ofise">
+                    <input type="radio" id="checks_ofise" name="mmmmm" />
+                    <p>Ofis</p>
+                    <p>Ofis</p>
+                  </label>
+                  <label for="checks_qaraje">
+                    <input type="radio" id="checks_qaraje" name="mmmmm" />
+                    <p>Qaraj</p>
+                    <p>Qaraj</p>
+                  </label>
+                  <label for="checks_garden">
+                    <input type="radio" id="checks_garden" name="mmmmm" />
+                    <p>Həyət evi/Bağ evi</p>
+                    <p>Həyət evi/Bağ evi</p>
+                  </label>
+                  <label for="checks_land">
+                    <input type="radio" id="checks_land" name="mmmmm" />
+                    <p>Torpaq</p>
+                    <p>Torpaq</p>
+                  </label>
+                  <label for="checks_object">
+                    <input type="radio" id="checks_object" name="mmmmm" />
+                    <p>Obyekt</p>
+                    <p>Obyekt</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="emlak_checks2_hero">
+              <h5>Otaq sayı</h5>
+              <div class="emlak_checks emlak_checks2">
+                <label for="checks_1">
+                  <input type="checkbox" id="checks_1" />
+                  <p>1</p>
+                  <p>1</p>
+                </label>
+                <label for="checks_2">
+                  <input type="checkbox" id="checks_2" />
+                  <p>2</p>
+                  <p>2</p>
+                </label>
+                <label for="checks_3">
+                  <input type="checkbox" id="checks_3" />
+                  <p>3</p>
+                  <p>3</p>
+                </label>
+                <label for="checks_4">
+                  <input type="checkbox" id="checks_4" />
+                  <p>4</p>
+                  <p>4</p>
+                </label>
+                <label for="checks_5">
+                  <input type="checkbox" id="checks_5" />
+                  <p>5+ otaqlı</p>
+                  <p>5+ otaqlı</p>
+                </label>
+              </div>
+            </div>
+            <div class="emlak_place sand_metr">
+              <div class="emlak_place_title">Sahə, m<sup>2</sup></div>
+              <div class="form-group emlak_place_inputs">
+                <div class="unersal_inputs">
+                  <label for="price_input_min">
+                    <input type="text" id="price_input_min" />
+                    <p>min</p>
+                  </label>
+                  <label for="price_input_max">
+                    <input type="text" id="price_input_max" />
+                    <p>maks</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="emlak_place sand_place">
+              <div class="emlak_place_title">Torpağın sahəsi, sot</div>
+              <div class="form-group emlak_place_inputs">
+                <div class="unersal_inputs">
+                  <label for="price_input_min">
+                    <input type="text" id="price_input_min" />
+                    <p>min</p>
+                  </label>
+                  <label for="price_input_max">
+                    <input type="text" id="price_input_max" />
+                    <p>maks</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="emlak_place">
+              <div class="emlak_place_title">Qiymət, azn</div>
+              <div class="form-group emlak_place_inputs">
+                <div class="unersal_inputs">
+                  <label for="price_input_min">
+                    <input type="text" id="price_input_min" />
+                    <p>min</p>
+                  </label>
+                  <label for="price_input_max">
+                    <input type="text" id="price_input_max" />
+                    <p>maks</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="emlak_ipoteka_cixarish emlak_ipoteka_cixarish_mobi">
+              <label for="emlak_cixarish3" class="emlak_cixarish">
+                <p>Çıxarış var</p>
+                <input type="checkbox" id="emlak_cixarish3" />
+              </label>
+              <label for="emlak_ipoteka4" class="emlak_ipoteka">
+                <p>İpoteka var</p>
+                <input type="checkbox" id="emlak_ipoteka4" />
+              </label>
+            </div>
+            <div class="emlak_ipoteka_cixarish month">
+              <label for="emlak_cixarish5" class="emlak_cixarish">
+                <p>Aylıq</p>
+                <input type="checkbox" id="emlak_cixarish5" />
+              </label>
+              <label for="emlak_ipoteka5" class="emlak_ipoteka">
+                <p>Günlük</p>
+                <input type="checkbox" id="emlak_ipoteka5" />
+              </label>
+            </div>
+            <div class="emlak_biznes">
+              <div class="emlak_place_title">Biznes növü</div>
+              <div class="emlak_ipoteka_cixarish month">
+                <label for="emlak_cixarish6" class="emlak_cixarish">
+                  <p>Biznes mərkəzi</p>
+                  <input type="checkbox" id="emlak_cixarish6" />
+                </label>
+                <label for="emlak_ipoteka6" class="emlak_ipoteka">
+                  <p>Ev/Mənzil</p>
+                  <input type="checkbox" id="emlak_ipoteka6" />
+                </label>
+                <label for="emlak_ipoteka7" class="emlak_ipoteka">
+                  <p>Villa</p>
+                  <input type="checkbox" id="emlak_ipoteka7" />
+                </label>
+              </div>
+            </div>
+            <div class="emlak_mobi_buy floor_all">
+              <label for="emlak_mobi_hamisi_input">
+                <input
+                  type="radio"
+                  id="emlak_mobi_hamisi_input"
+                  name="pppp"
+                  checked
+                />
+                <p id="emlak_mobi_alqi_p">Hamısı</p>
+              </label>
+              <label for="emlak_mobi_temirli_input">
+                <input type="radio" id="emlak_mobi_temirli_input" name="pppp" />
+                <p id="emlak_mobi_kiraye_p">Təmirli</p>
+              </label>
+              <label for="emlak_mobi_temirsiz_input">
+                <input
+                  type="radio"
+                  id="emlak_mobi_temirsiz_input"
+                  name="pppp"
+                />
+                <p id="emlak_mobi_kiraye_p">Təmirsiz</p>
+              </label>
+            </div>
+            <div class="emlak_place floor_check">
+              <div class="emlak_place_title">Mərtəbə</div>
+              <div class="form-group emlak_place_inputs">
+                <div class="unersal_inputs">
+                  <label for="price_input_min">
+                    <input type="text" id="price_input_min" />
+                    <p>min</p>
+                  </label>
+                  <label for="price_input_max">
+                    <input type="text" id="price_input_max" />
+                    <p>maks</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="emlak_floor_hero floor_floor">
+              <label
+                for="emlak_floor_not_one_input1"
+                class="emlak_floor_not_one"
+              >
+                <input
+                  type="checkbox"
+                  id="emlak_floor_not_one_input1"
+                  checked="false"
+                />
+                <p>1-ci olmasın</p>
+              </label>
+              <label
+                for="emlak_floor_not_one_input2"
+                class="emlak_floor_not_top"
+              >
+                <input
+                  type="checkbox"
+                  id="emlak_floor_not_one_input2"
+                  checked="false"
+                />
+                <p>Ən üst olmasın</p>
+              </label>
+              <label
+                for="emlak_floor_not_one_input3"
+                class="emlak_floor_only_top"
+              >
+                <input
+                  type="checkbox"
+                  id="emlak_floor_not_one_input3"
+                  checked="false"
+                />
+                <p>Yalnız ən üst</p>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="emlakMobiSearchDropdown_show">
+          <div class="main_container">
+            <button>Tətbiq et</button>
+          </div>
+        </div>
+      </div>
+      <div class="title_bg">
+        <div class="main_container">
+          <div class="title title--left" style="padding: 0 !important">
+            <span class="center-vertical">
+              <img src="assets/img/vip-large.svg" alt="" class="mr-10" />
+              VIP Elanlar
+            </span>
+            <a
+              class="btn btn--icon btn--transparent"
+              href="{% url 'web:catalog-vip' %}{% include 'partials/_request_GET.html' %}"
+            >
+              <img src="assets/img/chevron_lmain.svg" alt="" /> Bütün VIP
+              elanlar
+            </a>
+          </div>
+        </div>
+      </div>
+      <section>
+        <div class="main_container">
+          <div class="wrapper">
+            <div class="post">
+              <div class="post__list">
+                <div class="post__item">
+                  <div class="post__img">
+                    <img src="assets/img/example/post2.png" alt="" />
+                    <div class="post__attributes">
+                      <span
+                        class="post__vip"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="VIP elan"
+                      ></span>
+                      <a href="" class="post__favorites"></a>
+                    </div>
+                  </div>
+                  <div class="post__info">
+                    <div class="px-5">
+                      <a href="" class="post__title other_post_title"
+                        >Samsung Galaxy S12 phone sell</a
+                      >
+                      <p>Bakı, 28.01.2021, 16:34</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="post__price">2180 ₼</div>
+                      <div class="d-flex align-items-center">
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Barter mümkündür"
+                        >
+                          <img src="assets/img/barter.svg" alt="" />
+                        </span>
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Kredit mümkündür"
+                        >
+                          <img src="assets/img/percent.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__item">
+                  <div class="post__img">
+                    <img src="assets/img/example/post2.png" alt="" />
+                    <div class="post__attributes">
+                      <span
+                        class="post__vip"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="VIP elan"
+                      ></span>
+                      <a href="" class="post__favorites"></a>
+                    </div>
+                  </div>
+                  <div class="post__info">
+                    <div class="px-5">
+                      <a href="" class="post__title other_post_title"
+                        >Samsung Galaxy S12 phone sell</a
+                      >
+                      <p>Bakı, 28.01.2021, 16:34</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="post__price">2180 ₼</div>
+                      <div class="d-flex align-items-center">
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Barter mümkündür"
+                        >
+                          <img src="assets/img/barter.svg" alt="" />
+                        </span>
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Kredit mümkündür"
+                        >
+                          <img src="assets/img/percent.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__item">
+                  <div class="post__img">
+                    <img src="assets/img/example/post2.png" alt="" />
+                    <div class="post__attributes">
+                      <span
+                        class="post__vip"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="VIP elan"
+                      ></span>
+                      <a href="" class="post__favorites"></a>
+                    </div>
+                  </div>
+                  <div class="post__info">
+                    <div class="px-5">
+                      <a href="" class="post__title other_post_title"
+                        >Samsung Galaxy S12 phone sell</a
+                      >
+                      <p>Bakı, 28.01.2021, 16:34</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="post__price">2180 ₼</div>
+                      <div class="d-flex align-items-center">
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Barter mümkündür"
+                        >
+                          <img src="assets/img/barter.svg" alt="" />
+                        </span>
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Kredit mümkündür"
+                        >
+                          <img src="assets/img/percent.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__item">
+                  <div class="post__img">
+                    <img src="assets/img/example/post2.png" alt="" />
+                    <div class="post__attributes">
+                      <span
+                        class="post__vip"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="VIP elan"
+                      ></span>
+                      <a href="" class="post__favorites"></a>
+                    </div>
+                  </div>
+                  <div class="post__info">
+                    <div class="px-5">
+                      <a href="" class="post__title other_post_title"
+                        >Samsung Galaxy S12 phone sell</a
+                      >
+                      <p>Bakı, 28.01.2021, 16:34</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="post__price">2180 ₼</div>
+                      <div class="d-flex align-items-center">
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Barter mümkündür"
+                        >
+                          <img src="assets/img/barter.svg" alt="" />
+                        </span>
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Kredit mümkündür"
+                        >
+                          <img src="assets/img/percent.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__item">
+                  <div class="post__img">
+                    <img src="assets/img/example/post2.png" alt="" />
+                    <div class="post__attributes">
+                      <span
+                        class="post__vip"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="VIP elan"
+                      ></span>
+                      <a href="" class="post__favorites"></a>
+                    </div>
+                  </div>
+                  <div class="post__info">
+                    <div class="px-5">
+                      <a href="" class="post__title other_post_title"
+                        >Samsung Galaxy S12 phone sell</a
+                      >
+                      <p>Bakı, 28.01.2021, 16:34</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="post__price">2180 ₼</div>
+                      <div class="d-flex align-items-center">
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Barter mümkündür"
+                        >
+                          <img src="assets/img/barter.svg" alt="" />
+                        </span>
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Kredit mümkündür"
+                        >
+                          <img src="assets/img/percent.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__item">
+                  <div class="post__img">
+                    <img src="assets/img/example/post2.png" alt="" />
+                    <div class="post__attributes">
+                      <span
+                        class="post__vip"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="VIP elan"
+                      ></span>
+                      <a href="" class="post__favorites"></a>
+                    </div>
+                  </div>
+                  <div class="post__info">
+                    <div class="px-5">
+                      <a href="" class="post__title other_post_title"
+                        >Samsung Galaxy S12 phone sell</a
+                      >
+                      <p>Bakı, 28.01.2021, 16:34</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="post__price">2180 ₼</div>
+                      <div class="d-flex align-items-center">
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Barter mümkündür"
+                        >
+                          <img src="assets/img/barter.svg" alt="" />
+                        </span>
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Kredit mümkündür"
+                        >
+                          <img src="assets/img/percent.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__item">
+                  <div class="post__img">
+                    <img src="assets/img/example/post2.png" alt="" />
+                    <div class="post__attributes">
+                      <span
+                        class="post__vip"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="VIP elan"
+                      ></span>
+                      <a href="" class="post__favorites"></a>
+                    </div>
+                  </div>
+                  <div class="post__info">
+                    <div class="px-5">
+                      <a href="" class="post__title other_post_title"
+                        >Samsung Galaxy S12 phone sell</a
+                      >
+                      <p>Bakı, 28.01.2021, 16:34</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="post__price">2180 ₼</div>
+                      <div class="d-flex align-items-center">
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Barter mümkündür"
+                        >
+                          <img src="assets/img/barter.svg" alt="" />
+                        </span>
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Kredit mümkündür"
+                        >
+                          <img src="assets/img/percent.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__item">
+                  <div class="post__img">
+                    <img src="assets/img/example/post2.png" alt="" />
+                    <div class="post__attributes">
+                      <span
+                        class="post__vip"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="VIP elan"
+                      ></span>
+                      <a href="" class="post__favorites"></a>
+                    </div>
+                  </div>
+                  <div class="post__info">
+                    <div class="px-5">
+                      <a href="" class="post__title other_post_title"
+                        >Samsung Galaxy S12 phone sell</a
+                      >
+                      <p>Bakı, 28.01.2021, 16:34</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="post__price">2180 ₼</div>
+                      <div class="d-flex align-items-center">
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Barter mümkündür"
+                        >
+                          <img src="assets/img/barter.svg" alt="" />
+                        </span>
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Kredit mümkündür"
+                        >
+                          <img src="assets/img/percent.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__item">
+                  <div class="post__img">
+                    <img src="assets/img/example/post2.png" alt="" />
+                    <div class="post__attributes">
+                      <span
+                        class="post__vip"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="VIP elan"
+                      ></span>
+                      <a href="" class="post__favorites"></a>
+                    </div>
+                  </div>
+                  <div class="post__info">
+                    <div class="px-5">
+                      <a href="" class="post__title other_post_title"
+                        >Samsung Galaxy S12 phone sell</a
+                      >
+                      <p>Bakı, 28.01.2021, 16:34</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="post__price">2180 ₼</div>
+                      <div class="d-flex align-items-center">
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Barter mümkündür"
+                        >
+                          <img src="assets/img/barter.svg" alt="" />
+                        </span>
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Kredit mümkündür"
+                        >
+                          <img src="assets/img/percent.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__item">
+                  <div class="post__img">
+                    <img src="assets/img/example/post2.png" alt="" />
+                    <div class="post__attributes">
+                      <span
+                        class="post__vip"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="VIP elan"
+                      ></span>
+                      <a href="" class="post__favorites"></a>
+                    </div>
+                  </div>
+                  <div class="post__info">
+                    <div class="px-5">
+                      <a href="" class="post__title other_post_title"
+                        >Samsung Galaxy S12 phone sell</a
+                      >
+                      <p>Bakı, 28.01.2021, 16:34</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="post__price">2180 ₼</div>
+                      <div class="d-flex align-items-center">
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Barter mümkündür"
+                        >
+                          <img src="assets/img/barter.svg" alt="" />
+                        </span>
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Kredit mümkündür"
+                        >
+                          <img src="assets/img/percent.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__item">
+                  <div class="post__img">
+                    <img src="assets/img/example/post2.png" alt="" />
+                    <div class="post__attributes">
+                      <span
+                        class="post__vip"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="VIP elan"
+                      ></span>
+                      <a href="" class="post__favorites"></a>
+                    </div>
+                  </div>
+                  <div class="post__info">
+                    <div class="px-5">
+                      <a href="" class="post__title other_post_title"
+                        >Samsung Galaxy S12 phone sell</a
+                      >
+                      <p>Bakı, 28.01.2021, 16:34</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="post__price">2180 ₼</div>
+                      <div class="d-flex align-items-center">
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Barter mümkündür"
+                        >
+                          <img src="assets/img/barter.svg" alt="" />
+                        </span>
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Kredit mümkündür"
+                        >
+                          <img src="assets/img/percent.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__item">
+                  <div class="post__img">
+                    <img src="assets/img/example/post2.png" alt="" />
+                    <div class="post__attributes">
+                      <span
+                        class="post__vip"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="VIP elan"
+                      ></span>
+                      <a href="" class="post__favorites"></a>
+                    </div>
+                  </div>
+                  <div class="post__info">
+                    <div class="px-5">
+                      <a href="" class="post__title other_post_title"
+                        >Samsung Galaxy S12 phone sell</a
+                      >
+                      <p>Bakı, 28.01.2021, 16:34</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="post__price">2180 ₼</div>
+                      <div class="d-flex align-items-center">
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Barter mümkündür"
+                        >
+                          <img src="assets/img/barter.svg" alt="" />
+                        </span>
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Kredit mümkündür"
+                        >
+                          <img src="assets/img/percent.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__item">
+                  <div class="post__img">
+                    <img src="assets/img/example/post2.png" alt="" />
+                    <div class="post__attributes">
+                      <span
+                        class="post__vip"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="VIP elan"
+                      ></span>
+                      <a href="" class="post__favorites"></a>
+                    </div>
+                  </div>
+                  <div class="post__info">
+                    <div class="px-5">
+                      <a href="" class="post__title other_post_title"
+                        >Samsung Galaxy S12 phone sell</a
+                      >
+                      <p>Bakı, 28.01.2021, 16:34</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="post__price">2180 ₼</div>
+                      <div class="d-flex align-items-center">
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Barter mümkündür"
+                        >
+                          <img src="assets/img/barter.svg" alt="" />
+                        </span>
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Kredit mümkündür"
+                        >
+                          <img src="assets/img/percent.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__item">
+                  <div class="post__img">
+                    <img src="assets/img/example/post2.png" alt="" />
+                    <div class="post__attributes">
+                      <span
+                        class="post__vip"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="VIP elan"
+                      ></span>
+                      <a href="" class="post__favorites"></a>
+                    </div>
+                  </div>
+                  <div class="post__info">
+                    <div class="px-5">
+                      <a href="" class="post__title other_post_title"
+                        >Samsung Galaxy S12 phone sell</a
+                      >
+                      <p>Bakı, 28.01.2021, 16:34</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="post__price">2180 ₼</div>
+                      <div class="d-flex align-items-center">
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Barter mümkündür"
+                        >
+                          <img src="assets/img/barter.svg" alt="" />
+                        </span>
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Kredit mümkündür"
+                        >
+                          <img src="assets/img/percent.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__item">
+                  <div class="post__img">
+                    <img src="assets/img/example/post2.png" alt="" />
+                    <div class="post__attributes">
+                      <span
+                        class="post__vip"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="VIP elan"
+                      ></span>
+                      <a href="" class="post__favorites"></a>
+                    </div>
+                  </div>
+                  <div class="post__info">
+                    <div class="px-5">
+                      <a href="" class="post__title other_post_title"
+                        >Samsung Galaxy S12 phone sell</a
+                      >
+                      <p>Bakı, 28.01.2021, 16:34</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="post__price">2180 ₼</div>
+                      <div class="d-flex align-items-center">
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Barter mümkündür"
+                        >
+                          <img src="assets/img/barter.svg" alt="" />
+                        </span>
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Kredit mümkündür"
+                        >
+                          <img src="assets/img/percent.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="sticky-top reklam">
+                <a href="" class="d-md-block d-none">
+                  <img
+                    src="assets/img/example/banner1.png"
+                    alt=""
+                    class="w-100"
+                  />
+                </a>
+                <a href="" class="d-md-none">
+                  <img
+                    src="assets/img/example/banner-mob.png"
+                    alt=""
+                    class="w-100"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="main_container">
+          <div class="container-fluid">
+            <button class="btn btn--icon mx-auto mt-10">
+
+            </button>
+          </div>
+        </div> -->
+      </section>
+      <section>
+        <a href="">
+          <img src="assets/img/example/banner2.png" alt="" class="w-100" />
+        </a>
+      </section>
+      <section>
+        <div class="title_bg">
+          <div class="main_container">
+            <div
+              class="title yeniElanlar title--left"
+              style="padding: 0 !important"
+            >
+              <span class="center-vertical"> Yeni elanlar </span>
+              <form>
+                <div class="form-group sort__select">
+                  <select id="sort_input" class="selectpicker">
+                    <option value="-created_at" selected>Əvvəlcə yeni</option>
+                    <option value="created_at">Əvvəlcə köhnə</option>
+                    <option value="-price">Əvvəlcə baha</option>
+                    <option value="price">Əvvəlcə ucuz</option>
+                  </select>
+                </div>
+              </form>
+              <a
+                class="btn btn--icon btn--transparent"
+                href="{% url 'web:catalog-vip' %}{% include 'partials/_request_GET.html' %}"
+              >
+                <img src="assets/img/chevron_lmain.svg" alt="" /> Bütün yeni
+                elanlar
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="main_container">
+          <div class="wrapper">
+            <div class="post">
+              <div class="post__list">
+                <div class="post__item">
+                  <div class="post__img">
+                    <img src="assets/img/example/post2.png" alt="" />
+                    <div class="post__attributes">
+                      <span
+                        class="post__vip"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="VIP elan"
+                      ></span>
+                      <a href="" class="post__favorites"></a>
+                    </div>
+                  </div>
+                  <div class="post__info">
+                    <div class="px-5">
+                      <a href="" class="post__title other_post_title"
+                        >Samsung Galaxy S12 phone sell</a
+                      >
+                      <p>Bakı, 28.01.2021, 16:34</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="post__price">2180 ₼</div>
+                      <div class="d-flex align-items-center">
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Barter mümkündür"
+                        >
+                          <img src="assets/img/barter.svg" alt="" />
+                        </span>
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Kredit mümkündür"
+                        >
+                          <img src="assets/img/percent.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__item">
+                  <div class="post__img">
+                    <img src="assets/img/example/post2.png" alt="" />
+                    <div class="post__attributes">
+                      <span
+                        class="post__vip"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="VIP elan"
+                      ></span>
+                      <a href="" class="post__favorites"></a>
+                    </div>
+                  </div>
+                  <div class="post__info">
+                    <div class="px-5">
+                      <a href="" class="post__title other_post_title"
+                        >Samsung Galaxy S12 phone sell</a
+                      >
+                      <p>Bakı, 28.01.2021, 16:34</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="post__price">2180 ₼</div>
+                      <div class="d-flex align-items-center">
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Barter mümkündür"
+                        >
+                          <img src="assets/img/barter.svg" alt="" />
+                        </span>
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Kredit mümkündür"
+                        >
+                          <img src="assets/img/percent.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__item">
+                  <div class="post__img">
+                    <img src="assets/img/example/post2.png" alt="" />
+                    <div class="post__attributes">
+                      <span
+                        class="post__vip"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="VIP elan"
+                      ></span>
+                      <a href="" class="post__favorites"></a>
+                    </div>
+                  </div>
+                  <div class="post__info">
+                    <div class="px-5">
+                      <a href="" class="post__title other_post_title"
+                        >Samsung Galaxy S12 phone sell</a
+                      >
+                      <p>Bakı, 28.01.2021, 16:34</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="post__price">2180 ₼</div>
+                      <div class="d-flex align-items-center">
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Barter mümkündür"
+                        >
+                          <img src="assets/img/barter.svg" alt="" />
+                        </span>
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Kredit mümkündür"
+                        >
+                          <img src="assets/img/percent.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__item">
+                  <div class="post__img">
+                    <img src="assets/img/example/post2.png" alt="" />
+                    <div class="post__attributes">
+                      <span
+                        class="post__vip"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="VIP elan"
+                      ></span>
+                      <a href="" class="post__favorites"></a>
+                    </div>
+                  </div>
+                  <div class="post__info">
+                    <div class="px-5">
+                      <a href="" class="post__title other_post_title"
+                        >Samsung Galaxy S12 phone sell</a
+                      >
+                      <p>Bakı, 28.01.2021, 16:34</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="post__price">2180 ₼</div>
+                      <div class="d-flex align-items-center">
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Barter mümkündür"
+                        >
+                          <img src="assets/img/barter.svg" alt="" />
+                        </span>
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Kredit mümkündür"
+                        >
+                          <img src="assets/img/percent.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__item">
+                  <div class="post__img">
+                    <img src="assets/img/example/post2.png" alt="" />
+                    <div class="post__attributes">
+                      <span
+                        class="post__vip"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="VIP elan"
+                      ></span>
+                      <a href="" class="post__favorites"></a>
+                    </div>
+                  </div>
+                  <div class="post__info">
+                    <div class="px-5">
+                      <a href="" class="post__title other_post_title"
+                        >Samsung Galaxy S12 phone sell</a
+                      >
+                      <p>Bakı, 28.01.2021, 16:34</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="post__price">2180 ₼</div>
+                      <div class="d-flex align-items-center">
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Barter mümkündür"
+                        >
+                          <img src="assets/img/barter.svg" alt="" />
+                        </span>
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Kredit mümkündür"
+                        >
+                          <img src="assets/img/percent.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__item">
+                  <div class="post__img">
+                    <img src="assets/img/example/post2.png" alt="" />
+                    <div class="post__attributes">
+                      <span
+                        class="post__vip"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="VIP elan"
+                      ></span>
+                      <a href="" class="post__favorites"></a>
+                    </div>
+                  </div>
+                  <div class="post__info">
+                    <div class="px-5">
+                      <a href="" class="post__title other_post_title"
+                        >Samsung Galaxy S12 phone sell</a
+                      >
+                      <p>Bakı, 28.01.2021, 16:34</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="post__price">2180 ₼</div>
+                      <div class="d-flex align-items-center">
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Barter mümkündür"
+                        >
+                          <img src="assets/img/barter.svg" alt="" />
+                        </span>
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Kredit mümkündür"
+                        >
+                          <img src="assets/img/percent.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__item">
+                  <div class="post__img">
+                    <img src="assets/img/example/post2.png" alt="" />
+                    <div class="post__attributes">
+                      <span
+                        class="post__vip"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="VIP elan"
+                      ></span>
+                      <a href="" class="post__favorites"></a>
+                    </div>
+                  </div>
+                  <div class="post__info">
+                    <div class="px-5">
+                      <a href="" class="post__title other_post_title"
+                        >Samsung Galaxy S12 phone sell</a
+                      >
+                      <p>Bakı, 28.01.2021, 16:34</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="post__price">2180 ₼</div>
+                      <div class="d-flex align-items-center">
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Barter mümkündür"
+                        >
+                          <img src="assets/img/barter.svg" alt="" />
+                        </span>
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Kredit mümkündür"
+                        >
+                          <img src="assets/img/percent.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__item">
+                  <div class="post__img">
+                    <img src="assets/img/example/post2.png" alt="" />
+                    <div class="post__attributes">
+                      <span
+                        class="post__vip"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="VIP elan"
+                      ></span>
+                      <a href="" class="post__favorites"></a>
+                    </div>
+                  </div>
+                  <div class="post__info">
+                    <div class="px-5">
+                      <a href="" class="post__title other_post_title"
+                        >Samsung Galaxy S12 phone sell</a
+                      >
+                      <p>Bakı, 28.01.2021, 16:34</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="post__price">2180 ₼</div>
+                      <div class="d-flex align-items-center">
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Barter mümkündür"
+                        >
+                          <img src="assets/img/barter.svg" alt="" />
+                        </span>
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Kredit mümkündür"
+                        >
+                          <img src="assets/img/percent.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__item">
+                  <div class="post__img">
+                    <img src="assets/img/example/post2.png" alt="" />
+                    <div class="post__attributes">
+                      <span
+                        class="post__vip"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="VIP elan"
+                      ></span>
+                      <a href="" class="post__favorites"></a>
+                    </div>
+                  </div>
+                  <div class="post__info">
+                    <div class="px-5">
+                      <a href="" class="post__title other_post_title"
+                        >Samsung Galaxy S12 phone sell</a
+                      >
+                      <p>Bakı, 28.01.2021, 16:34</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="post__price">2180 ₼</div>
+                      <div class="d-flex align-items-center">
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Barter mümkündür"
+                        >
+                          <img src="assets/img/barter.svg" alt="" />
+                        </span>
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Kredit mümkündür"
+                        >
+                          <img src="assets/img/percent.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__item">
+                  <div class="post__img">
+                    <img src="assets/img/example/post2.png" alt="" />
+                    <div class="post__attributes">
+                      <span
+                        class="post__vip"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="VIP elan"
+                      ></span>
+                      <a href="" class="post__favorites"></a>
+                    </div>
+                  </div>
+                  <div class="post__info">
+                    <div class="px-5">
+                      <a href="" class="post__title other_post_title"
+                        >Samsung Galaxy S12 phone sell</a
+                      >
+                      <p>Bakı, 28.01.2021, 16:34</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="post__price">2180 ₼</div>
+                      <div class="d-flex align-items-center">
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Barter mümkündür"
+                        >
+                          <img src="assets/img/barter.svg" alt="" />
+                        </span>
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Kredit mümkündür"
+                        >
+                          <img src="assets/img/percent.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__item">
+                  <div class="post__img">
+                    <img src="assets/img/example/post2.png" alt="" />
+                    <div class="post__attributes">
+                      <span
+                        class="post__vip"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="VIP elan"
+                      ></span>
+                      <a href="" class="post__favorites"></a>
+                    </div>
+                  </div>
+                  <div class="post__info">
+                    <div class="px-5">
+                      <a href="" class="post__title other_post_title"
+                        >Samsung Galaxy S12 phone sell</a
+                      >
+                      <p>Bakı, 28.01.2021, 16:34</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="post__price">2180 ₼</div>
+                      <div class="d-flex align-items-center">
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Barter mümkündür"
+                        >
+                          <img src="assets/img/barter.svg" alt="" />
+                        </span>
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Kredit mümkündür"
+                        >
+                          <img src="assets/img/percent.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__item">
+                  <div class="post__img">
+                    <img src="assets/img/example/post2.png" alt="" />
+                    <div class="post__attributes">
+                      <span
+                        class="post__vip"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="VIP elan"
+                      ></span>
+                      <a href="" class="post__favorites"></a>
+                    </div>
+                  </div>
+                  <div class="post__info">
+                    <div class="px-5">
+                      <a href="" class="post__title other_post_title"
+                        >Samsung Galaxy S12 phone sell</a
+                      >
+                      <p>Bakı, 28.01.2021, 16:34</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="post__price">2180 ₼</div>
+                      <div class="d-flex align-items-center">
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Barter mümkündür"
+                        >
+                          <img src="assets/img/barter.svg" alt="" />
+                        </span>
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Kredit mümkündür"
+                        >
+                          <img src="assets/img/percent.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__item">
+                  <div class="post__img">
+                    <img src="assets/img/example/post2.png" alt="" />
+                    <div class="post__attributes">
+                      <span
+                        class="post__vip"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="VIP elan"
+                      ></span>
+                      <a href="" class="post__favorites"></a>
+                    </div>
+                  </div>
+                  <div class="post__info">
+                    <div class="px-5">
+                      <a href="" class="post__title other_post_title"
+                        >Samsung Galaxy S12 phone sell</a
+                      >
+                      <p>Bakı, 28.01.2021, 16:34</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="post__price">2180 ₼</div>
+                      <div class="d-flex align-items-center">
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Barter mümkündür"
+                        >
+                          <img src="assets/img/barter.svg" alt="" />
+                        </span>
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Kredit mümkündür"
+                        >
+                          <img src="assets/img/percent.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__item">
+                  <div class="post__img">
+                    <img src="assets/img/example/post2.png" alt="" />
+                    <div class="post__attributes">
+                      <span
+                        class="post__vip"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="VIP elan"
+                      ></span>
+                      <a href="" class="post__favorites"></a>
+                    </div>
+                  </div>
+                  <div class="post__info">
+                    <div class="px-5">
+                      <a href="" class="post__title other_post_title"
+                        >Samsung Galaxy S12 phone sell</a
+                      >
+                      <p>Bakı, 28.01.2021, 16:34</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="post__price">2180 ₼</div>
+                      <div class="d-flex align-items-center">
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Barter mümkündür"
+                        >
+                          <img src="assets/img/barter.svg" alt="" />
+                        </span>
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Kredit mümkündür"
+                        >
+                          <img src="assets/img/percent.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post__item">
+                  <div class="post__img">
+                    <img src="assets/img/example/post2.png" alt="" />
+                    <div class="post__attributes">
+                      <span
+                        class="post__vip"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="VIP elan"
+                      ></span>
+                      <a href="" class="post__favorites"></a>
+                    </div>
+                  </div>
+                  <div class="post__info">
+                    <div class="px-5">
+                      <a href="" class="post__title other_post_title"
+                        >Samsung Galaxy S12 phone sell</a
+                      >
+                      <p>Bakı, 28.01.2021, 16:34</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="post__price">2180 ₼</div>
+                      <div class="d-flex align-items-center">
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Barter mümkündür"
+                        >
+                          <img src="assets/img/barter.svg" alt="" />
+                        </span>
+                        <span
+                          class="post__feature"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="Kredit mümkündür"
+                        >
+                          <img src="assets/img/percent.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="sticky-top reklam">
+                <a href="" class="d-md-block d-none">
+                  <img
+                    src="assets/img/example/banner3.png"
+                    alt=""
+                    class="w-100"
+                  />
+                </a>
+                <a href="" class="d-md-none">
+                  <img
+                    src="assets/img/example/banner-mob.png"
+                    alt=""
+                    class="w-100"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="main_container">
+          <div class="more">
+            <button class="btn btn--more mx-auto mt-10">Daha çox göstər</button>
+          </div>
+        </div> -->
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__topbar">
+          <div class="contact contact--secondary">
+            <a href="" class="contact__network facebook"></a>
+            <a href="" class="contact__network instagram"></a>
+            <span class="contact__tel">
+              Dəstək:
+              <a href="tel:">051 123 45 67</a>
+            </span>
+            <a href="" class="contact__network whatsapp"></a>
+            <a href="" class="contact__network telegram"></a>
+          </div>
+          <div class="footer__navbar">
+            <a href="" class="footer__navlink">Əsas səhifə</a>
+            <a href="" class="footer__navlink">Reklam yerləşdirmək</a>
+            <a href="" class="footer__navlink">Haqqımızda</a>
+            <a href="" class="footer__navlink footer__navlink--secondary"
+              >Mağaza qeydiyyatı</a
+            >
+          </div>
+        </div>
+        <div class="d-none d-md-block">
+          <ul class="footer__cities">
+            <li><a href="">Bakı</a></li>
+            <li><a href="">Sumqayıt</a></li>
+            <li><a href="">Xırdalan</a></li>
+            <li><a href="">Gəncə</a></li>
+            <li><a href="">Qəbələ</a></li>
+            <li><a href="">Quba</a></li>
+            <li><a href="">Xaçmaz</a></li>
+            <li><a href="">Lənkəran</a></li>
+            <li><a href="">Mingəçevir</a></li>
+            <li><a href="">Şəki</a></li>
+            <li><a href="">Qusar</a></li>
+            <li><a href="">Şirvan</a></li>
+          </ul>
+          <ul class="footer__cities">
+            <li><a href="">Ağcabədi</a></li>
+            <li><a href="">Ağdam</a></li>
+            <li><a href="">Ağdaş</a></li>
+            <li><a href="">Ağdərə</a></li>
+            <li><a href="">Ağstafa</a></li>
+            <li><a href="">Ağsu</a></li>
+            <li><a href="">Astara</a></li>
+            <li><a href="">Balakən</a></li>
+            <li><a href="">Beyləqan</a></li>
+            <li><a href="">Bərdə</a></li>
+            <li><a href="">Biləsuvar</a></li>
+            <li><a href="">Cəbrayıl</a></li>
+            <li><a href="">Cəlilabad</a></li>
+            <li><a href="">Culfa</a></li>
+            <li><a href="">Daşkəsən</a></li>
+            <li><a href="">Füzuli</a></li>
+            <li><a href="">Gədəbəy</a></li>
+            <li><a href="">Goranboy</a></li>
+            <li><a href="">Göyçay</a></li>
+            <li><a href="">Göygöl</a></li>
+            <li><a href="">Göytəpə</a></li>
+            <li><a href="">Hacıqabul</a></li>
+            <li><a href="">Horadiz</a></li>
+            <li><a href="">İmişli</a></li>
+            <li><a href="">İsmayıllı</a></li>
+            <li><a href="">Kəlbəcər</a></li>
+            <li><a href="">Kürdəmir</a></li>
+            <li><a href="">Laçın</a></li>
+            <li><a href="">Lerik</a></li>
+            <li><a href="">Masallı</a></li>
+            <li><a href="">Nabran</a></li>
+            <li><a href="">Naftalan</a></li>
+            <li><a href="">Naxçıvan</a></li>
+            <li><a href="">Neftçala</a></li>
+            <li><a href="">Oğuz</a></li>
+            <li><a href="">Ordubad</a></li>
+            <li><a href="">Qax</a></li>
+            <li><a href="">Qazax</a></li>
+            <li><a href="">Qobustan</a></li>
+            <li><a href="">Qubadlı</a></li>
+            <li><a href="">Saatlı</a></li>
+            <li><a href="">Sabirabad</a></li>
+            <li><a href="">Şabran</a></li>
+            <li><a href="">Şahbuz</a></li>
+            <li><a href="">Salyan</a></li>
+            <li><a href="">Şamaxı</a></li>
+            <li><a href="">Samux</a></li>
+            <li><a href="">Şəmkir</a></li>
+            <li><a href="">Şərur</a></li>
+            <li><a href="">Siyəzən</a></li>
+            <li><a href="">Şuşa</a></li>
+            <li><a href="">Tərtər</a></li>
+            <li><a href="">Tovuz</a></li>
+            <li><a href="">Ucar</a></li>
+            <li><a href="">Xankəndi</a></li>
+            <li><a href="">Xızı</a></li>
+            <li><a href="">Xocalı</a></li>
+            <li><a href="">Xocavənd</a></li>
+            <li><a href="">Xudat</a></li>
+            <li><a href="">Yardımlı</a></li>
+            <li><a href="">Yevlax</a></li>
+            <li><a href="">Zaqatala</a></li>
+            <li><a href="">Zəngilan</a></li>
+            <li><a href="">Zərdab</a></li>
+          </ul>
+        </div>
+        <div class="footer__bottombar">
+          <span class="footer__copyright"
+            >© IT Enterprise MMC, 2021. Bütün hüquqlar qorunur.</span
+          >
+          <div>
+            <a href="" class="footer__link">Məxfilik siyasəti</a>
+            <a href="" class="footer__link">İstifadə şərtləri</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="modal-title">Daxil ol</span>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="mb-30">
+              Profildən elanlarınızı izləyin, yeniləyin və redaktə edin
+            </p>
+            <form action="">
+              <div class="form-group">
+                <label for="num">Telefon nömrəsi</label>
+                <input
+                  type="text"
+                  name=""
+                  id="num"
+                  class="form-control"
+                  placeholder="+994501234567"
+                />
+              </div>
+              <button class="btn btn--yellow">Daxil ol</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="confirmModal"
+      tabindex="-1"
+      aria-labelledby="confirmModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="modal-title">Birdəfəlik şifrə</span>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="mb-30">
+              <b>+994** *** 60 48</b> nömrəsinə SMS vasitəsilə göndərilən 4
+              rəqəmli şifrəni daxil edin.
+            </p>
+            <form action="">
+              <div class="form-group mt-20">
+                <label for="code">Birdəfəlik şifrə</label>
+                <input
+                  type="text"
+                  name=""
+                  id="code"
+                  class="form-control"
+                  value="9878"
+                />
+              </div>
+              <button class="btn btn--yellow">Daxil ol</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="assets/libs/jquery/jquery-3.5.1.min.js"><\/script>'
+        );
+    </script>
+
+    <script
+      src="assets/libs/popper.js/popper.min.js"
+      type="text/javascript"
+    ></script>
+
+    <script
+      src="assets/libs/bootstrap/bootstrap.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="assets/libs/sorttable/sorttable.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="assets/libs/lightslider/lightslider.js"
+    ></script>
+
+    <script type="text/javascript" src="assets/libs/zoom/zoom.js"></script>
+
+    <script
+      type="text/javascript"
+      src="assets/libs/sumogallery/jquery.sumogallery.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="assets/libs/bootstrap-select/bootstrap-select.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="assets/libs/moment.js/moment.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="assets/libs/bootstrap-datetimepicker/tempusdominus-bootstrap-4.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="assets/libs/jquery-ui/jquery-ui.min.js"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var carousel = new Flickity(".carousel", {
+          prevNextButtons: false, // Отключаем кнопки навигации
+          pageDots: false, // Отключаем точки навигации
+          contain: true, // Принудительно ограничиваем ширину контейнера
+          draggable: true, // Запрещаем перетаскивание для скроллинга
+          cellAlign: "left", // Выравниваем элементы к левому краю
+        });
+
+        // Автоматический скролл к последнему элементу
+        carousel.select(0);
+      });
+    </script>
+    <script src="assets/js/all.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
+    <script src="assets/js/emlak.js"></script>
+    <!-- <script src="assets/js/descFilters.js"></script> -->
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. 
+       <script>
+           window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+           ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+       </script>-->
+    <script
+      src="https://www.google-analytics.com/analytics.js"
+      async
+      defer
+    ></script>
+  </body>
+</html>

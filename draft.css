@@ -1,0 +1,25 @@
+.emlak_mobi_buy label input:checked + p {
+  background-color: #e8ffea !important;
+  color: #0e6910 !important;
+  border: 1px solid #0e6910 !important;
+}
+
+#emlak_mobi_alqi_input_mean:checked + p {
+  background-color: #e8ffea !important;
+  color: #0e6910 !important;
+  border: 1px solid #0e6910 !important;
+}
+.emlakMobiSearchBtn {
+    display: inline-block;
+    border-radius: 7px;
+    width: 23% !important;
+    height: 100%;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #0e6910!important;
+    border: 1px solid #0e6910 !important;;
+    font-size: 16px;
+    margin-left: auto;
+  }

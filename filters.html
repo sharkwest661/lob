@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html class="no-js" lang="az">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Bolbol</title>
+    <meta name="description" content="" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1.0, maximum-scale=3.0, initial-scale=1.0"
+    />
+    <meta name="theme-color" content="#013F44" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/libs/normalize.css/normalize.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/libs/bootstrap/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/libs/lightslider/lightslider.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/libs/sumogallery/sumogallery.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/libs/bootstrap-select/bootstrap-select.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="assets/libs/bootstrap-datetimepicker/tempusdominus-bootstrap-4.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/main/main.css" />
+  </head>
+
+  <body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <main class="pt-0">
+      <form action="">
+        <section class="filterHeading">
+          <a href="neqliyyat.html"
+            ><img src="assets/img/back-icon.svg" alt=""
+          /></a>
+          <div class="filterHeading__title">Filtrlər</div>
+          <button
+            type="reset"
+            class="btn btn--transparent justify-content-end"
+            id="mobi_all_reset_btn"
+          >
+            Sıfırla
+          </button>
+        </section>
+        <div id="citySelect">
+          <label id="cityLabel">Şəhər</label>
+          <p id="checkedCity"></p>
+          <i class="fa-solid fa-chevron-down" id="mob_city_arrow_down"></i>
+          <i class="fa-solid fa-circle-xmark" id="mob_city_reset_xmark"></i>
+        </div>
+        <div class="city_dropdown">
+          <div class="city_header">
+            <i class="fa-solid fa-arrow-left" id="cityCloseBtn"></i>
+            <h3>Şəhər</h3>
+          </div>
+          <div class="search search--live">
+            <div class="input-group search__group">
+              <input
+                type="text"
+                class="form-control search__input"
+                id="citySearch"
+              />
+              <div class="input-group-append search__append">
+                <button class="search__btn" type="button"></button>
+              </div>
+            </div>
+          </div>
+          <ul class="selectBox__list" id="citiesList"></ul>
+        </div>
+        <section class="brands mb-30" id="tillMark">
+          <p>Marka və model</p>
+          <div class="brands__grid brands__grid--4">
+            <div class="brands__item brands__item--small">
+              <img
+                src="https://turbo.azstatic.com/uploads/makelogo/2021%2F05%2F18%2F16%2F53%2F52%2Fc0231997-84f3-4e49-8a46-15d634db7502%2Fmercedes-benz-9%4054x.png"
+                alt=""
+              />
+              <span>Mercedes</span>
+            </div>
+            <div class="brands__item brands__item--small">
+              <img
+                src="https://turbo.azstatic.com/uploads/makelogo/2021%2F05%2F18%2F16%2F53%2F52%2Fc0231997-84f3-4e49-8a46-15d634db7502%2Fmercedes-benz-9%4054x.png"
+                alt=""
+              />
+              <span>Mercedes</span>
+            </div>
+            <div class="brands__item brands__item--small">
+              <img
+                src="https://turbo.azstatic.com/uploads/makelogo/2021%2F05%2F18%2F16%2F53%2F52%2Fc0231997-84f3-4e49-8a46-15d634db7502%2Fmercedes-benz-9%4054x.png"
+                alt=""
+              />
+              <span>Mercedes</span>
+            </div>
+            <div class="brands__item brands__item--small">
+              <img
+                src="https://turbo.azstatic.com/uploads/makelogo/2021%2F05%2F18%2F16%2F53%2F52%2Fc0231997-84f3-4e49-8a46-15d634db7502%2Fmercedes-benz-9%4054x.png"
+                alt=""
+              />
+              <span>Mercedes</span>
+            </div>
+            <div class="brands__item brands__item--small">
+              <img
+                src="https://turbo.azstatic.com/uploads/makelogo/2021%2F05%2F18%2F16%2F53%2F52%2Fc0231997-84f3-4e49-8a46-15d634db7502%2Fmercedes-benz-9%4054x.png"
+                alt=""
+              />
+              <span>Mercedes</span>
+            </div>
+            <div class="brands__item brands__item--small">
+              <img
+                src="https://turbo.azstatic.com/uploads/makelogo/2021%2F05%2F18%2F16%2F53%2F52%2Fc0231997-84f3-4e49-8a46-15d634db7502%2Fmercedes-benz-9%4054x.png"
+                alt=""
+              />
+              <span>Mercedes</span>
+            </div>
+            <div class="brands__item brands__item--small">
+              <img
+                src="https://turbo.azstatic.com/uploads/makelogo/2021%2F05%2F18%2F16%2F53%2F52%2Fc0231997-84f3-4e49-8a46-15d634db7502%2Fmercedes-benz-9%4054x.png"
+                alt=""
+              />
+              <span>Mercedes</span>
+            </div>
+            <div class="brands__item brands__item--small">
+              <img
+                src="https://turbo.azstatic.com/uploads/makelogo/2021%2F05%2F18%2F16%2F53%2F52%2Fc0231997-84f3-4e49-8a46-15d634db7502%2Fmercedes-benz-9%4054x.png"
+                alt=""
+              />
+              <span>Mercedes</span>
+            </div>
+          </div>
+          <!-- <button class="btn" type="button" id="brands-select">
+            Bütün markaları göstər
+          </button> -->
+        </section>
+        <div class="mark_dropdown">
+          <div class="mark_header">
+            <i class="fa-solid fa-arrow-left" id="markCloseBtn"></i>
+            <h3>Marka</h3>
+          </div>
+          <div class="search search--live">
+            <div class="input-group search__group">
+              <input
+                type="text"
+                class="form-control search__input"
+                id="markInput"
+              />
+              <div class="input-group-append search__append">
+                <button class="search__btn" type="button"></button>
+              </div>
+            </div>
+          </div>
+          <ul class="selectBox__list" id="carMarks"></ul>
+        </div>
+        <div class="oldMarksNone" id="afterMarkMark">
+          <label id="markLabel">Marka</label>
+          <p id="checkedMark"></p>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="marks_new">
+          <div class="marks_new-mark" data-mark="Mercedes">
+            <div class="marks_new-img">
+              <img src="./assets/img/markalar/mercedes.png" />
+            </div>
+            <p>Mercedes</p>
+          </div>
+          <div class="marks_new-mark" data-mark="LADA (VAZ)">
+            <div class="marks_new-img">
+              <img src="./assets/img/markalar/lada.png" />
+            </div>
+            <p>Lada(VAZ)</p>
+          </div>
+          <div class="marks_new-mark" data-mark="Hyundai">
+            <div class="marks_new-img">
+              <img src="./assets/img/markalar/hyundai.png" />
+            </div>
+            <p>Hyundai</p>
+          </div>
+          <div class="marks_new-mark" data-mark="Kia">
+            <div class="marks_new-img">
+              <img src="./assets/img/markalar/kia.png" />
+            </div>
+            <p>Kia</p>
+          </div>
+          <div class="marks_new-mark" data-mark="Toyota">
+            <div class="marks_new-img">
+              <img src="./assets/img/markalar/toyota.png" />
+            </div>
+            <p>Toyota</p>
+          </div>
+          <div class="marks_new-mark" data-mark="BMW">
+            <div class="marks_new-img">
+              <img src="./assets/img/markalar/bmw.png" />
+            </div>
+            <p>BMW</p>
+          </div>
+          <div class="marks_new-mark" data-mark="Opel">
+            <div class="marks_new-img">
+              <img src="./assets/img/markalar/opel.png" />
+            </div>
+            <p>Opel</p>
+          </div>
+          <div class="marks_new-mark" data-mark="Chevrolet">
+            <div class="marks_new-img">
+              <img src="./assets/img/markalar/chevrolet.png" />
+            </div>
+            <p>Chevrolet</p>
+          </div>
+        </div>
+        <div class="showAllMarks" id="showAllMarks">
+          <button class="btn" type="button" id="brands-select">
+            Bütün markaları göstər
+          </button>
+        </div>
+        <!-- <div class="" id="afterMarkModel">
+          <label id="modelLabel">Model</label>
+          <p id="checkedModel"></p>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div> -->
+        <br>
+        <div class="model_dropdown">
+          <div class="model_header">
+            <i class="fa-solid fa-arrow-left" id="modelCloseBtn"></i>
+            <h3>Model</h3>
+          </div>
+          <div class="search search--live">
+            <div class="input-group search__group">
+              <input
+                type="text"
+                class="form-control search__input"
+                id="modelInput"
+              />
+              <div class="input-group-append search__append">
+                <button class="search__btn" type="button"></button>
+              </div>
+            </div>
+          </div>
+          <ul class="selectBox__list" id="carModel"></ul>
+        </div>
+        <section class="forPaddingBottom">
+          <div class="container">
+            <div class="checksNew">
+              <div class="firstChecks">
+                <input type="radio" name="kkk" checked />
+                <label for="">Hamısı</label>
+              </div>
+              <div class="secondChecks">
+                <input type="radio" name="kkk" />
+                <label for="">Yeni</label>
+              </div>
+              <div class="thirdChecks">
+                <input type="radio" name="kkk" />
+                <label for="">Sürülmüş</label>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-all"
+              role="tabpanel"
+              aria-labelledby="pills-all-tab"
+
+              style="padding-top: 0px;"
+            >
+              <div class="customFilter mb-10">
+                <div class="form-joint five_inp" id="respDist">
+                  <div class="form-group form-material">
+                    <label id="mobi_dist1_label">Yürüş(km), min.</label>
+                    <input
+                      type="text"
+                      class="form-control pt_input"
+                      id="mobi_dist1_input"
+                    />
+                  </div>
+                  <div class="form-group form-material">
+                    <label id="mobi_dist1_label">maks.</label>
+                    <input
+                      type="text"
+                      class="form-control pt_input"
+                      id="mobi_dist1_input"
+                    />
+                  </div>
+                </div>
+
+                <div id="banSelect">
+                  <label id="banLabel">Ban Növü</label>
+                  <p id="checkedBan"></p>
+                  <i
+                    class="fa-solid fa-chevron-down"
+                    id="mob_ban_arrow_down"
+                  ></i>
+                  <i
+                    class="fa-solid fa-circle-xmark"
+                    id="mob_ban_reset_xmark"
+                  ></i>
+                </div>
+                <div class="ban_modal">
+                  <div class="ban_dropdown">
+                    <div class="ban_header">
+                      <i class="fa-solid fa-xmark" id="banCloseBtn"></i>
+                      <h3>Ban Növü</h3>
+                    </div>
+                    <ul class="selectBox__list" id="banList"></ul>
+                  </div>
+                </div>
+
+                <div class="years_container">
+                  <div id="yearsSelect1">
+                    <label id="yearLabel1">İl, min</label>
+                    <p id="checkedYear1"></p>
+                    <i
+                      class="fa-solid fa-chevron-down"
+                      id="mob_year1_arrow_down"
+                    ></i>
+                    <i
+                      class="fa-solid fa-circle-xmark"
+                      id="mob_year1_reset_xmark"
+                    ></i>
+                  </div>
+                  <div id="yearsSelect2">
+                    <label id="yearLabel2">maks</label>
+                    <p id="checkedYear2"></p>
+                    <i
+                      class="fa-solid fa-chevron-down"
+                      id="mob_year2_arrow_down"
+                    ></i>
+                    <i
+                      class="fa-solid fa-circle-xmark"
+                      id="mob_year2_reset_xmark"
+                    ></i>
+                  </div>
+                </div>
+                <div class="year_modal1">
+                  <div class="year_dropdown1">
+                    <div class="year_header1">
+                      <i class="fa-solid fa-xmark" id="yearCloseBtn1"></i>
+                      <h3>il, min</h3>
+                    </div>
+                    <ul class="selectBox__list" id="yearList1"></ul>
+                  </div>
+                </div>
+                <div class="year_modal2">
+                  <div class="year_dropdown2">
+                    <div class="year_header2">
+                      <i class="fa-solid fa-xmark" id="yearCloseBtn2"></i>
+                      <h3>il, min</h3>
+                    </div>
+                    <ul class="selectBox__list" id="yearList2"></ul>
+                  </div>
+                </div>
+                <div class="litr_container">
+                  <div id="litrSelect1">
+                    <label id="litrLabel1">Həcm (sm<sup>3</sup>), min</label>
+                    <p id="checkedLitr1"></p>
+                    <i
+                      class="fa-solid fa-chevron-down"
+                      id="mob_litr1_arrow_down"
+                    ></i>
+                    <i
+                      class="fa-solid fa-circle-xmark"
+                      id="mob_litr1_reset_xmark"
+                    ></i>
+                  </div>
+                  <div id="litrSelect2">
+                    <label id="litrLabel2">Həcm (sm<sup>3</sup>), max</label>
+                    <p id="checkedLitr2"></p>
+                    <i
+                      class="fa-solid fa-chevron-down"
+                      id="mob_litr2_arrow_down"
+                    ></i>
+                    <i
+                      class="fa-solid fa-circle-xmark"
+                      id="mob_litr2_reset_xmark"
+                    ></i>
+                  </div>
+                </div>
+                <div class="litr_modal1">
+                  <div class="litr_dropdown1">
+                    <div class="litr_header1">
+                      <i class="fa-solid fa-xmark" id="litrCloseBtn1"></i>
+                      <h3>Həcm (sm<sup>3</sup>), min</h3>
+                    </div>
+                    <ul class="selectBox__list" id="litrList1"></ul>
+                  </div>
+                </div>
+                <div class="litr_modal2">
+                  <div class="litr_dropdown2">
+                    <div class="litr_header2">
+                      <i class="fa-solid fa-xmark" id="litrCloseBtn2"></i>
+                      <h3>Həcm (sm<sup>3</sup>), min</h3>
+                    </div>
+                    <ul class="selectBox__list" id="litrList2"></ul>
+                  </div>
+                </div>
+                <div id="colorSelect">
+                  <label id="colorLabel">Rəng</label>
+                  <p id="checkedColor"></p>
+                  <i
+                    class="fa-solid fa-chevron-down"
+                    id="mob_color_arrow_down"
+                  ></i>
+                  <i
+                    class="fa-solid fa-circle-xmark"
+                    id="mob_color_reset_xmark"
+                  ></i>
+                </div>
+                <div class="color_modal">
+                  <div class="color_dropdown">
+                    <div class="color_header">
+                      <i class="fa-solid fa-xmark" id="colorCloseBtn"></i>
+                      <h3>Rəng</h3>
+                    </div>
+                    <ul class="selectBox__list" id="colorList"></ul>
+                  </div>
+                </div>
+                <div class="form-joint five_inp" id="respPrice">
+                  <div class="form-group form-material">
+                    <label>Qiymət, min.</label>
+                    <input type="text" class="form-control pt_input" />
+                  </div>
+                  <div class="form-group form-material">
+                    <label>maks.</label>
+                    <input type="text" class="form-control pt_input" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-new"
+              role="tabpanel"
+              aria-labelledby="pills-new-tab"
+            ></div>
+            <div
+              class="tab-pane fade"
+              id="pills-used"
+              role="tabpanel"
+              aria-labelledby="pills-used-tab"
+            ></div>
+          </div>
+        </section>
+        <section class="forPaddingTop">
+          <div class="tab-content forPaddingTop" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active forPaddingTop"
+              id="pills-all2"
+              role="tabpanel"
+              aria-labelledby="pills-all2-tab"
+            >
+              <div class="customFilter mb-10" id="mobi_oil_check">
+                <p>Yanacaq növü</p>
+                <div class="customFilter__checkbox" id="mobi_oil_check_hero">
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="check1" checked />
+                    <label for="check1">Vacib deyil</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="check2" />
+                    <label for="check2">Benzin</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="check3" />
+                    <label for="check3">Dizel</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="check4" />
+                    <label for="check4">Qaz</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="check5" />
+                    <label for="check5">Elektro</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="check6" />
+                    <label for="check6">Hibrid</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="check7" />
+                    <label for="check7">Plug-in Hibrid</label>
+                  </div>
+                </div>
+              </div>
+              <div class="customFilter mb-10" id="mobi_box_check">
+                <p>Ötürücü</p>
+                <div class="customFilter__checkbox">
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="check8" checked />
+                    <label for="check8">Vacib deyil</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="check9" />
+                    <label for="check9">Arxa</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="check10" />
+                    <label for="check10">Ön</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="check11" />
+                    <label for="check11">Tam</label>
+                  </div>
+                </div>
+              </div>
+              <div class="customFilter mb-10" id="mobi_speed_check">
+                <p>Süretler qutusu</p>
+                <div class="customFilter__checkbox">
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="check12" checked />
+                    <label for="check12">Vacib deyil</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="check13" />
+                    <label for="check13">Mexaniki</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="check14" />
+                    <label for="check14">Avtomat</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="check15" />
+                    <label for="check15">Robotlaşdırılmış</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="check16" />
+                    <label for="check16">Variator</label>
+                  </div>
+                </div>
+              </div>
+              <div class="customFilter mb-10" id="mobi_additional_check">
+                <p>Avtomobilin təchizatı</p>
+                <div class="customFilter__checkbox">
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="check17" checked />
+                    <label for="check17">Yüngül lehimli diskler</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="check18" />
+                    <label for="check18">ABS</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="check19" />
+                    <label for="check19">Lyuk</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="check20" />
+                    <label for="check20">Yağış sensoru</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="check21" />
+                    <label for="check21">Merkezi qapanma</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="check22" />
+                    <label for="check22">Park radarı</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="check23" />
+                    <label for="check23">Kondisioner</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="check24" />
+                    <label for="check24">Oturacaqların isidilmesi</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="check25" />
+                    <label for="check25">Dəri salon</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="check26" />
+                    <label for="check26">Ksenon lampalar</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="check27" />
+                    <label for="check27">Arxa görüntü kamerası</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="check28" />
+                    <label for="check28">Yan pərdələr</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="check29" />
+                    <label for="check29">Oturacaqların ventilyasiyası</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-salon"
+              role="tabpanel"
+              aria-labelledby="pills-salon-tab"
+            >
+              2
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-personal"
+              role="tabpanel"
+              aria-labelledby="pills-personal-tab"
+            >
+              3
+            </div>
+          </div>
+        </section>
+        <button class="btn form-btn" type="submit">Axtar</button>
+      </form>
+    </main>
+
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="assets/libs/jquery/jquery-3.5.1.min.js"><\/script>'
+        );
+    </script>
+
+    <script
+      src="assets/libs/popper.js/popper.min.js"
+      type="text/javascript"
+    ></script>
+
+    <script
+      src="assets/libs/bootstrap/bootstrap.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="assets/libs/sorttable/sorttable.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="assets/libs/lightslider/lightslider.js"
+    ></script>
+
+    <script type="text/javascript" src="assets/libs/zoom/zoom.js"></script>
+    <script src="assets/js/filter.js"></script>
+    <script
+      type="text/javascript"
+      src="assets/libs/sumogallery/jquery.sumogallery.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="assets/libs/bootstrap-select/bootstrap-select.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="assets/libs/moment.js/moment.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="assets/libs/bootstrap-datetimepicker/tempusdominus-bootstrap-4.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="assets/libs/jquery-ui/jquery-ui.min.js"
+    ></script>
+
+    <script src="assets/js/all.js" type="text/javascript"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. 
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>-->
+    <script
+      src="https://www.google-analytics.com/analytics.js"
+      async
+      defer
+    ></script>
+  </body>
+</html>
